@@ -24,12 +24,12 @@ const orderPriceDelta = Number(process.env.ORDER_PRICE_DELTA) || .001; //The amo
 
 //Currency config:
 //The pieces of the product pair, this is the two halves of coinbase product pair (examples of product pairs: BTC-USD, DASH-BTC, ETH-USDC). For BTC-USD the base currency is BTC and the quote currency is USD 
-const baseCurrencyName = process.env.BASE_CURRENCY_NAME || "BTC";
-const quoteCurrencyName = process.env.QUOTE_CURRENCY_NAME || "USD";
+const baseCurrencyName = process.env.BASE_CURRENCY_NAME || "ETH";
+const quoteCurrencyName = process.env.QUOTE_CURRENCY_NAME || "EUR";
 
 //Profile config:
 //Coinbase portfolios (profiles):
-const tradingProfileName = process.env.TRADING_PROFILE_NAME || "BTC trader"; //This is the name of the profile you want the bot to trade in
+const tradingProfileName = process.env.TRADING_PROFILE_NAME || "ethBot"; //This is the name of the profile you want the bot to trade in
 const depositProfileName = process.env.DEPOSIT_PROFILE_NAME || "default"; //This is the name of the profile you want to deposit some profits to
 
 //Deposit config:
